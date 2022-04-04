@@ -1,0 +1,57 @@
+.nav {
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  padding: 20px;
+  border-right: 1px solid #000000;
+}
+
+.nav > a {
+  color: white;
+  margin: 8px 0;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 12px 16px;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+  transition: all 0.125s ease;
+}
+
+.nav > a:hover {
+  background-color: rgb(74, 79, 216);
+}
+
+.input {
+  margin: 32px 0;
+  text-decoration: none;
+  background: white;
+  border-radius: 4px;
+  border: 1px solid #e6a327;
+  font-size: 14px;
+  padding: 8px 16px;
+  height: 28px;
+}
+
+.glow {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+      0 0 10px #5911f4, 0 0 20px #6d50ff, 0 0 30px #e60073, 0 0 40px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #99004c, 0 0 40px #ff4da6,
+      0 0 20px #ff4da6, 0 0 30px #f7027d, 0 0 40px #ff4da6, 0 0 50px #ff4da6;
+  }
+}
