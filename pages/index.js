@@ -1,5 +1,6 @@
 import Layout from "../components/layout";
 import Sidebar from "../components/sidebar";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import { AiFillCaretRight } from "react-icons/ai";
 
 export default function Index() {
@@ -41,9 +42,10 @@ export default function Index() {
                     Updated 15.03.2022
                   </span>
                 </span>
+
                 <a
                   className="pl-6 text-white text-base group-hover:text-gray-100 transition duration-300 "
-                  href="/portfolio"
+                  target={`_blank`}
                 >
                   <div className="flex flex-row items-center justify-between">
                     Resume

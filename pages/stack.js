@@ -1,25 +1,33 @@
 import Layout from "../components/layout";
 import Sidebar from "../components/sidebar";
-//import Image from "next/image";
-
 import React from "react";
-//import ReactDOM from "react-dom";
-import CardPop from "../components/Pop";
+import CappucinoPop from "../components/Cappuccino";
+import EspressoPop from "../components/Espresso";
+import MochaPop from "../components/Mocha";
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 export default function Stack() {
   return (
     <div className="flex justify-between">
       <div className="flex flex-col">
-        <span className="ml-8 mt-8">CAPPUCINO</span>
-        <CardPop />
+        <span className="flex flex-row ml-8 mt-8 font-thin">
+          CAPPUCCINO <IoIosArrowRoundForward className="mt-2 ml-2" />
+        </span>
+        <CappucinoPop />
       </div>
       <div className="flex flex-col">
-        <span className="ml-8 mt-8">ESPRESSO</span>
-        <CardPop />
+        <span className="ml-8 mt-8 flex flex-row font-thin text-yellow-700">
+          ESPRESSO
+          <IoIosArrowRoundForward className="mt-2 ml-2 animate-pulse text-black" />
+        </span>
+        <EspressoPop />
       </div>
       <div className="flex flex-col">
-        <span className="ml-8 mt-8">CAFFÈ MOCHA</span>
-        <CardPop />
+        <span className="ml-8 mt-8 flex flex-row font-thin">
+          CAFFÈ MOCHA
+          <IoIosArrowRoundForward className="mt-2 ml-2" />
+        </span>
+        <MochaPop />
       </div>
     </div>
   );
